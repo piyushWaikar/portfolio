@@ -28,6 +28,7 @@
         margin: auto;
 
         .phoneSvg{
+            z-index: -1;
             stroke: orange;
             position: absolute;
         }
