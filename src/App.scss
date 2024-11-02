@@ -1,0 +1,33 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    //This two properties hold the smooth transition between pages. 
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    background-color: #0c0c1d;
+    color: lightgray;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; // taking color from parernt element that is body
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: center; // Smoth animation effect holding into center
+    overflow: hidden;
+}

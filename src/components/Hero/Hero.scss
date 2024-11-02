@@ -1,0 +1,66 @@
+.hero {
+    height: calc(100vh - 100px);
+    background: linear-gradient(180deg, #0c0c1d, #111132); // so you will get that shade of different color from top to bottom.
+
+    overflow: hidden;
+    position: relative;
+
+
+    .wrapper {
+        max-width: 1366px;
+        margin: auto;
+        height: 100%;
+
+        .textContainer {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+            width: 50%;
+            
+            .buttons{
+                button{
+                    border: 1px solid white;
+                    color: white;
+                    background-color: transparent;
+                    border-radius: 10px;
+                    padding: 20px;
+                    font-weight: 300;
+                    cursor: pointer;
+                    margin-right: 20px;
+                }
+            }
+
+
+            img{
+                width: 50px;
+            }
+
+            h2{
+                color: rebeccapurple;
+                font-size: 30px;
+                letter-spacing: 10px;
+            }
+
+            h1{
+                font-size: 80px;
+            }
+        }
+    }
+
+    .slidingTextContainer{
+        position: absolute;
+        font-size: 50vh;
+        bottom: -120px;
+        white-space: nowrap;
+        color: #ffffff09;
+        font-weight: bold;
+    }
+
+    .imageContainer {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
